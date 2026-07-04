@@ -8,7 +8,7 @@ from chatbot import retrieve_context, generate_answer
 
 st.set_page_config(page_title="Document Q&A (RAG)", page_icon="📄")
 
-st.title("📄 Document Question Answering System")
+st.title(" Document Question Answering System")
 st.write("Upload any PDF (notes, resume, research paper, book) and ask questions grounded in its content.")
 
 # Load embedding model once, cache it (it doesn't change between files)
@@ -65,4 +65,4 @@ if st.session_state.vectorstore is not None:
         with st.expander("See retrieved context (for transparency)"):
             st.write(context)
 else:
-    st.info("👆 Upload a PDF above to get started.")
+    st.info(" Upload a PDF above to get started.")
